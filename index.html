@@ -1,138 +1,228 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid</title>
-    <style>
-        *{
-            font-family: Helvetica;
-        }
-        a{
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
+<!-- Rahmen, der ein Raster erzeugt -->
+<div style="
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: 3fr;
+            
+            column-gap: 10px;
+            row-gap: 10px;
+            
+            padding: 0px;
+            "><!-- Erster Kasten -->
+<div style="
 
+                    width: 1fr; 
+                    height: 430px;
+                    padding: 10px;
+                    
+                    border-radius: 4px; 
+                    
+                    background-image: linear-gradient(180deg, #9abfe4 0%, rgb(217, 230, 225) 100%);
 
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; ">
-        <!-- First Column Full-Height -->
-        <div style="border-radius: 4px; background-color: #f1f1f1; 
-                    background-image: url('/images/bonn.jpg');          
-                    margin: 0 5px 5px 0; padding: 20px; grid-row: 1 / 3;">
-            <div style="
-                        background-size: cover;        
-                        width: calc(100% - 16px); 
-                        padding: 8px; 
-                        overflow: hidden;
                     ">
-                <p style="color: white; font-size: 0.7em; letter-spacing: 2.2px"><strong>CALL FOR ABSTRACTS</strong></p>
-                <h1 style="
-                    font-size: 2.4em;
-                    line-height: 1;
-                    text-transform:uppercase;
-                    padding: 0;
-                    margin: 0;
-                ">
-                17. Kongress f&uuml;r Krankenhaushygiene</h1>
-                <p style="font-size: 0.7em; font-weight: lighter; text-transform:uppercase; letter-spacing: 1px; opacity: 0.3; "><strong>12. bis 15. Mai&nbsp;2024 in Bonn</strong></p>
-                        <a  rel="noopener" 
-                            href="https://abstract.krankenhaushygiene.de/" 
-                            target="_blank"> 
-                            <button 
-                                style="
-                                    border: none;
-                                    padding: 10px 15px;
-                                    font-size: 1.2em;
-                                    background-color: #0060ad;
-                                    color: white;
-                                    border-radius: 20px;
-                                    font-weight: bold;
-                                    cursor: pointer;
-                                    margin: 30px 0;
-                                ">
-                                Abstract&nbsp;einreichen
-                            </button>
-                        </a>
-                <p style="font-size: 0.7em;"> 
-                        <a  rel="noopener"  class="pdf" 
-                            href="https://www.congress-compact.de/pdf/2024_05_12-15_DGKH_Jahreskongress_Call-For-Abstracts.pdf" 
-                            target="_blank">Save&nbsp;the&nbsp;Date</a>
-                        &nbsp;&nbsp;&nbsp; 
-                        <a rel="noopener" href="https://www.congress-compact.de/veranstaltungskalender?anmeldung=1238" 
-                            target="_blank">Zur&nbsp;Anmeldung&nbsp;</a>
-                        &nbsp;&nbsp;&nbsp; 
-                        <a  rel="noopener" href="https://www.krankenhaushygiene.de/veranstaltungen/" 
-                            target="_blank">Zur&nbsp;Einladung</a>
-                        &nbsp;&nbsp;&nbsp;
-                        <a  rel="noopener" 
-                            href="https://www.bonn-region.de/events/dgkh2024.html" 
-                            target="_blank">Hotel&nbsp;buchen</a>
-                </p>
+<p style="color: white !important; text-align: left !important; font-size: 0.7em; letter-spacing: 2.2px"><strong>CALL FOR ABSTRACTS</strong></p>
+
+<h1 style="
+                        font-size: 24px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        line-height: 1;
+                        text-transform:uppercase;
+                        padding: 0;
+                        margin: 0;
+                        ">17. Kongress f&uuml;r Krankenhaushygiene</h1>
+
+<p style="font-size: 0.7em; font-weight: lighter; text-transform:uppercase; letter-spacing: 1px; opacity: 0.3; "><strong>12. bis 15. Mai&nbsp;2024 in Bonn</strong></p>
+
+<div style="
+                                            width:auto;
+                                            max-width:fit-content;
+                                            border: none;
+                                            padding: 10px 15px;
+                                            font-size: 1.2em;
+                                            background-color: #0060ad;
+                                            color: white !important; 
+                                            text-align: left !important;
+                                            border-radius: 8px;
+                                            font-weight: bold;
+                                            
+                                            margin: 30px 0;
+            
+                                            "><a href="https://abstract.krankenhaushygiene.de/" rel="noopener" style="text-decoration: none;" target="_blank"><span style="color: white;">Abstract&nbsp;einreichen<br />
+<span style="font-size: smaller; font-weight:lighter; ">Deadline 31.12.2023</span></span></a></div>
+
+<p style="font-size: 0.7em;"><a class="pdf" href="https://www.congress-compact.de/pdf/2024_05_12-15_DGKH_Jahreskongress_Call-For-Abstracts.pdf" rel="noopener" style="text-decoration: none;" target="_blank">Call for Abstract</a> &nbsp;|&nbsp; <a href="https://www.congress-compact.de/veranstaltungskalender?anmeldung=1238" rel="noopener" style="text-decoration: none;" target="_blank">Zur&nbsp;Anmeldung</a> &nbsp;|&nbsp; <a href="https://www.krankenhaushygiene.de/veranstaltungen/" rel="noopener" style="text-decoration: none;" target="_blank">Zur&nbsp;Einladung</a> &nbsp;|&nbsp; <a href="https://www.bonn-region.de/events/dgkh2024.html" rel="noopener" style="text-decoration: none;" target="_blank">Hotel&nbsp;buchen</a></p>
+
+<p style="font-size: 1.1em">&nbsp;</p>
+
+<p style="font-size: 0.5em; text-transform: uppercase; letter-spacing: 1.8px; opacity: 0.3;"><strong>In Kooperation mit</strong></p>
+
+<p style="font-size: 1.1em"><img alt="" src="/images/eunetips_white.png" style="width: 200px; margin-left: 0;" /></p>
+</div>
+<!-- Zweiter Kasten -->
+
+<div style="
+                position: relative;
+                background-color: #a07ac3;
+                background-image: url('04.png');
+                background-image: url('/images/hygiene/04.png');
+                background-size: cover;
+                background-position: center;
+                display: grid;
+                width: 1fr;
+                height: 450px;
+                padding: 0px;
+                border-radius: 4px;
+                "><a href="https://www.bvoegd-kongress.de/" rel="noopener" target="_blank"><img alt="73. Wissenschaftlicher Kongress
+                Der Öffentliche Gesundheitsdienst —
+                Rückenwind für Gesundheit!
+                24. — 27. April 2024, Hamburg" src="/images/hygiene/02.png" style="
+                    max-width:300px;
+                    padding: 50px 0 0 0;
+                    " /> </a>
+
+<div style="
+                    position: absolute;
+                    bottom: 10px;
+                    text-align:center;
                 
-                <p style="font-size: 1.1em">&nbsp;</p>
-                <p style="font-size: 0.5em; text-transform: uppercase; letter-spacing: 1.8px; opacity: 0.3;"><strong>In Kooperation mit</strong></p>
-                <p style="font-size: 1.1em">
-                    <img    alt="" 
-                            src="/images/eunetips_logo-quer.png" 
-                            style="width: 200px; margin-left: 15px;" />
-                </p>
-            </div>
-        </div>
-        
-        <!-- Second Column Full-Height -->
-        <!-- Knobloch Tagung —— Basiskurs? -->
-        <div style="
-                font-size:large; 
-                line-height: 1.1; 
-                border-radius: 4px; 
-                background-color: #85FFBD; 
-                background-image: linear-gradient(45deg, #85FFBD 0%, #c3c18b 100%); 
-                margin: 0 5px 5px 0; 
-                padding: 20px; 
-                grid-row: 1 / 3; 
-                color: white; text-transform:uppercase; 
-                letter-spacing: 1px; 
-                font-weight:bolder; 
-                display: flex; 
-                justify-content: center; 
-                align-items: center; 
-                hyphens:manual;
-                ;
-            ">
-            Hygiene erfolg&shy;reich ver&shy;mitteln – 1. Didak&shy;tischer Basis&shy;kurs
-        </div>
-    
-        <!-- Third Column with 3 rows -->
-        <div style="font-size:x-large; line-height: 1.1;  border-radius: 4px; background-color: #a07ac3; margin: 0 5px 5px 0; padding: 20px; color: white; text-transform:uppercase; letter-spacing: 1px; font-weight:bolder; display: flex; justify-content: center; align-items: center;">ABS</div>
+                
+                "><a href="https://www.bvoegd-kongress.de/" rel="noopener" target="_blank"><img alt="In Zusammenarbeit mit BVÖGD, BZÖG, DGÖG, GHUP" src="/images/hygiene/03.png" style="
+                        left: 0px;
+                        max-width:90%;
+                        padding:10px;
+                        " /> </a></div>
+<a href="https://www.bvoegd-kongress.de/" rel="noopener" target="_blank"> </a></div>
+<!-- Dritter Kasten, der meherere Kästen enthält -->
 
+<div style="
+                display: grid; 
+                grid-template-rows: 1fr;
+                row-gap: 10px;
+                
+                "><!-- Dritter Kasten -- Oben -->
+<div style="
+                        display: flex;
 
-        <!-- Curriculare -->
-        <div style=" line-height: 1.1;  border-radius: 4px; background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); margin: 0 5px 5px 0; padding: 20px; color: white; text-transform:uppercase; letter-spacing: 1px; font-weight:bolder; display: flex; justify-content: center; align-items: center;">
-            <a href="https://www.krankenhaushygiene.de/veranstaltungen/906">
-                <h1 style="font-size:x-large;">curriculare Fortbildung</h1>
-                <p style="text-transform: none; font-size: smaller; hyphens:manual">Möglich&shy;keit für Ärzte anderer Fach&shy;richtungen geschaffen, nach einer curricu&shy;laren Fort&shy;bildung als Kranken&shy;haus&shy;hygieniker zu arbeiten.</p>
-                <button 
-                    style="
-                        border: none;
-                        padding: 10px 15px;
-                        font-size: smaller;
-                        background-color: #0060ad;
-                        color: white;
-                        border-radius: 20px;
-                        font-weight: bold;
-                        cursor: pointer;
-                        margin: 10px 0;
-                    ">
-                    mehr erfahren
-                </button>
-            </a>
+                        background-color: #8EC5FC; 
+                        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 
-        </div>
+                        line-height: 1.1;
+
+                        width: 1fr; 
+                        height: 223px;
+                        padding: 10px;
+                        border-radius: 4px;
+
+                        "><!-- Curriculare -->
+<div style="
+                    display: flex;
+                    color: white !important;
+                    text-align: left !important; 
+                    text-transform:uppercase; 
+                    letter-spacing: 1px; font-weight:bolder; display: grid; justify-content: center; align-items: center;">
+<div>
+<h1 style="font-size: 16px; line-height: 22px; color: white !important; text-align: left !important;">Strukturierte curriculare Fortbildung &bdquo;Krankenhaushygiene&rdquo;</h1>
+
+<p style=" line-height:1.1; text-transform: none; font-size: 1em; hyphens:manual; text-align: left !important;"><a href="https://www.krankenhaushygiene.de/veranstaltungen/906" rel="noopener" style="color: white !important; text-decoration: none !important; " target="_blank">M&ouml;glich&shy;keit f&uuml;r &Auml;rzte anderer Fach&shy;richtungen, nach einer curricu&shy;laren Fort&shy;bildung als Kranken&shy;haus&shy;hygieniker zu arbeiten.</a></p>
+</div>
+<!-- Button -->
+
+<div style="
+                                align-self: flex-end;
+                                width:auto;
+                                max-width:fit-content;
+                                background-color: #0060ad;
+                                
+                                color: white !important;
+                                text-align: left !important;
+                                text-transform: none;
+                                font-weight: bold;
+                                
+                                font-size: 12px;
+                                letter-spacing:0px;
+                                
+                                
+                                padding: 10px 15px;
+                                margin: 10px 0;
+                                border-radius: 20px;
+                                border: none;
+                                "><a href="https://www.krankenhaushygiene.de/veranstaltungen/906" rel="noopener" style="display:block;" target="_blank"><span style="color: white;">Mehr&nbsp;erfahren</span> </a></div>
+</div>
+</div>
+<!-- Dritter Kasten -- Unten -->
+
+<div style="
+                        background-color: #a07ac3;
+                        background-image: url('/images/bg-5.jpg');
+                        background-size:1000%;
+                        background-position: center;
+                        
+                        display: grid;
+                        
+                        width: 1fr; 
+                        height: 173px;
+                        padding: 10px;
+                        border-radius: 4px;
+                        ">
+<div>
+<h1 style="font-size: 18px; line-height: 22px;  text-transform:uppercase; color: white !important; text-align: left !important; line-height: 1;">Antibiotic stewardship Kurs der DGKH</h1>
+
+<p style="font-size: 1.3em !important;  line-height:1.1; color: white !important; text-align: left !important; font-weight: bolder;">Fortbildung zum<br />
+ABS-Experten</p>
+</div>
+<!-- Button -->
+
+<div style="
+                                        align-self: flex-end;
+                                        width:auto;
+                                        max-width:fit-content;
+                                        background-color: #0060ad;
+                                        
+                                        color: white !important;
+                                        text-align: left !important;
+                                        text-transform: none;
+                                        font-weight: bold;
+                                        
+                                        font-size: 12px;
+                                        letter-spacing:0px;
+                                        
+                                        
+                                        padding: 10px 15px;
+                                        margin: 10px 0;
+                                        border-radius: 20px;
+                                        border: none;
+                                        "><a href="https://www.antibioticstewardship.de/" rel="noopener" target="_blank"><span style="color: white;">Zur&nbsp;Webseite</span></a></div>
+</div>
+</div>
+</div>
+<!-- Hygiene Erfolgreich Vermitteln —— Kasten unten -->
+
+<a href="https://www.congress-compact.de/veranstaltungskalender?anmeldung=1462" target='_blank' rel='noopener'></a>
+<div style="
+        display:grid;
+        height: 150px;
+        padding: 10px 60px 30px 60px;
+        margin-top: 10px;
+
+        border-radius: 4px; 
+
+        background-image: linear-gradient(90deg, #dd9861 0%, #b6baa9 100%);
+        background-image: url(/images/hygiene/1.png);
+        ">
+    <p>
+            <span   style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:1.2; color: #24387b; padding: 0;         margin: 0; text-transform:uppercase;">Basiskurs Didaktik</span><br />
+            <span   style="font-family: Arial, Helvetica, sans-serif; font-size:32px; line-height:1.2; color: white;   padding: 0;         margin: 0; text-transform:uppercase;">Hygiene erfolgreich Vermitteln</span><br />
+            <span   style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:1.2; color: #24387b; padding: 0;         margin: 0; text-transform:uppercase;">Personal in Kliniken f&uuml;r Hygiene begeistern</span>
+    </p>
+
+    <div style="align-self: flex-end; display: flex; flex-wrap: wrap; flex-direction: row; align-items: center; justify-content: space-between;">
+        <p>
+            <span   style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height:1.2; color: #24387b; padding: 0;         margin: 0;">18. bis 20. M&auml;rz 2024</span><br />
+            <span   style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height:1.2; color: #24387b; padding: 0;         margin: 0;">Universit&auml;tsklinikum Augsburg</span>
+        </p>
+        <span>
+            <a      style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:1.2; color: #24387b; padding: 0 0 3px 0; margin: 0 10px 0 0; border-bottom: 1.7px solid #24387b ; text-decoration: none; " target='_blank' rel='noopener' href="https://www.congress-compact.de/veranstaltungskalender?anmeldung=1462">       Anmeldung</a>
+            <a      style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height:1.2; color: #24387b; padding: 0 0 3px 0; margin: 0 10px 0 0; border-bottom: 1.7px solid #24387b ; text-decoration: none; " target='_blank' rel='noopener' href="https://newdesign.cc2c.de/pdf/2024-DGKH-Basiskurs-Didaktik.pdf">              Flyer</a>
+        </span>
     </div>
-
-    
-</body>
-</html>
+</div>
